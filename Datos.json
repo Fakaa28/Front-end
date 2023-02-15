@@ -1,0 +1,11 @@
+[{
+    "nombre": "Facundo",
+    "apellido": "Calabretta",
+    "edad": "18",
+    "titulos": "(Tecnico mecanico);(Programador)"
+},
+{
+    "objeto": "computadora",
+    "componentes": "Ryzen 7 con 1650 super"
+}
+]
