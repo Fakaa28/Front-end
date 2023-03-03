@@ -27,3 +27,7 @@ interface miDireccion {
  
  };
  console.log(Persona.mostrarDireccion())
+
+ let nombre: string = '';
+ let telefono: number 
+  let dni: number 

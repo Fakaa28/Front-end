@@ -1,90 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<title> Portfolio Calabretta </title>
+    <title>Portfolio Calabretta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="datos" href="Datos.json" />
+    <link rel="datos" href="datos.js" />
+  </head>
+  <body>
+    <div class="encabezado">
+      <h1>Facundo Calabretta</h1>
+      <h2>
+        Soy actualmente estudiante de secundaria en un Técnico mecánico en el
+        sexto año
+      </h2>
+    </div>
 
-<link rel="stylesheet" href="style.css">
-<link rel="datos" href="Datos.json">
-<link rel="datos" href="datos.js">
+    <div class="Personalidad">
+      <div></div>
+      <h3>Personalidad</h3>
+      <h4>
+        Trabajador en equipo y siempre responsable a las tareas que se ordenan
+      </h4>
+    </div>
 
-<div class="encabezado">
- <head>
- <meta charset="utf-8">
-   <h1> Facundo Calabretta </h1>
+    <div class="contacto">
+      <p>
+        Contacto:<a href="https://www.instagram.com/fakaa.ok/">Instagram</a>
+      </p>
+    </div>
 
- </head>
-</div>
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th scope="col">Proyectos</th>
 
-<body>
-    <h2>
-        Soy actualmente estudiante de secundaria en un Técnico mecánico en el sexto año
-    </h2>
-</body>
+          <th scope="col">Iniciacion estimada</th>
+        </tr>
+      </thead>
 
-<div class="Personalidad">
-    <h3> Personalidad</h3>
-    <h4> Trabajador en equipo y siempre responsable a las tareas que se ordenan</h4>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
 
-</div>
+          <td>Hacer cursos</td>
 
+          <td>1/6/2024</td>
+        </tr>
 
-<div class="contacto">
+        <tr>
+          <th scope="row">2</th>
 
-<p>Contacto:<a href="https://www.instagram.com/fakaa.ok/">Instagram</a></p>
+          <td>Empezar a trabajar individualmente</td>
 
-</div>
+          <td>1/1/2034</td>
+        </tr>
+      </tbody>
+    </table>
 
-<table class="tabla">
+    <figure class="figura">
+      <figcaption class="figure-caption">
+        Meta en la vida: llegar a obtener los autos que yo me proponga,
+        simplemente por hobbie
+      </figcaption>
 
-    <thead>
+      <img src="audi rs.gif" class="figure-img img-fluid rounded" alt="1" />
+    </figure>
 
-      <tr>
-
-        <th scope="col">Proyectos</th>
-
-        <th scope="col">Iniciacion estimada</th>
-
-        
-      </tr>
-
-    </thead>
-
-    <tbody>
-
-      <tr>
-
-        <th scope="row">1</th>
-
-        <td>Hacer cursos</td>
-
-        <td>1/6/2024</td>
-
-      </tr>
-
-      <tr>
-
-        <th scope="row">2</th>
-
-        <td>Empezar a trabajar individualmente</td>
-
-        <td>1/1/2034</td>
-
-      </tr>
-
-    </tbody>
-
-  </table>
-
-  <figure class="figura">
-    <figcaption class="figure-caption">Meta en la vida: llegar a obtener los autos que yo me proponga, simplemente por hobbie</figcaption>
-
-    <img src="audi rs.gif" class="figure-img img-fluid rounded" alt="1">
-
-    
-
-</figure>
-
-<form>
+    <!-- (no borrar, experimento)<form>
 
   <div class="Poner tus datos">
 
@@ -108,5 +92,46 @@
 
   <button type="submit" class="btn btn-primary">Enviar</button>
 
-</form>
+</form> -->
+
+    <div>
+      <div>
+        <form>
+          <div>
+            Nombre:
+            <input
+              placeholder="Ingrese su nombre"
+              type="text"
+              [(ngModel)]="nombre"
+            />
+            <!-- despues voy a aplicar para que se guarden los datos en la base de datos -->
+          </div>
+          <br />
+          <div>
+            Teléfono:
+            <input
+              placeholder="ingrese su telefono"
+              type="number"
+              [ngModel]="telefono"
+            />
+            <!-- despues voy a aplicar para que se guarden los datos en la base de datos -->
+          </div>
+          <br />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <br />
+      <div>
+        Tú nombre es: <b>{nombre}</b> y tiene {{nombre.length}} <b>letras</b>,
+        esto es magia.
+      </div>
+      <br />
+      <div>
+        Tú telefono es: <b>{telefono}</b> y tiene {{telefono.length}}
+        <b>digitos</b>.
+      </div>
+      <br />
+    
+    </div>
+  </body>
 </html>
