@@ -25,12 +25,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "portfolio/node_modules/bootstrap/dist/css/bootstrap.css"
+              "src/styles.css"
+              
               
             ],
             "scripts": [
-              "portfolio/node_modules/bootstrap/dist/css/bootstrap.js"
+              
             ]
           },
           "configurations": {
