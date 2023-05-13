@@ -1,18 +1,21 @@
 .row {
     padding: 20px;
+    color: black
 }
 div{
     background-color: #1B0A4D;
-    text-align: center;
+    
 }
 /*Estilo de la foto de perfil*/
+
+
 @media (min-width:576px){
     #fotoperfil{
         position: absolute;
-        width: 15%;
+        width: 11em;
         border-radius: 100%;
         box-shadow: 3px 3px 3px 3px black;
-        left: 43%;
+       
     }
 
 
@@ -34,6 +37,7 @@ div{
 /*etiqueta nombre*/
 #nombre{
     font-weight: bold;
+    color:black;
     margin-top: 18%;
     
 }

@@ -1,20 +1,44 @@
 .row{
     padding: 20px;
     background-color: #1B0A4D;
+    color:black
 }
 .container{
     width: auto;
 }
+p{
+    color:antiquewhite
+}
 .parte1, .parte2{
+    
     display: inline-block;
-    text-align: justify;
+    width: 1000px
+    
 }
 img {
+    
     box-shadow: 10px 10px 50px black;
     border: solid 0.5em gray;
-    width: 800px;
-    height: 500px;
+   
 }
 .intro{
     color: wheat !important;
+}
+@media (max-width:1106px){
+    #Torno{
+        position: absolute;
+        width: 11em;
+        
+        box-shadow: 3px 3px 3px 3px black;
+       
+    }
+    #Motor{
+        position: absolute;
+        width: 11em;
+        
+        box-shadow: 3px 3px 3px 3px black;
+       
+    }
+
+
 }
