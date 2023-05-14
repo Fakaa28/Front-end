@@ -8,18 +8,31 @@ div{
 }
 /*Estilo de la foto de perfil*/
 
-
-@media (min-width:576px){
+@media (min-width:1080px){
     #fotoperfil{
         position: absolute;
         width: 11em;
         border-radius: 100%;
         box-shadow: 3px 3px 3px 3px black;
+        top: 60%;
+        
        
     }
-
-
 }
+@media (max-width:1080px){
+    #fotoperfil{
+        position: absolute;
+        width: 8em;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px 3px black;
+        top: 25em
+       
+    }
+}
+
+
+
+
 @media (max-width:575px){
     #fotoperfil{
         position: absolute;
@@ -27,7 +40,7 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px 3px black;
         left: 43%;
-        top: 58%;
+        top: 70%;
     }
 
 
